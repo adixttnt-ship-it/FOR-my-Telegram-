@@ -45,8 +45,8 @@
     const finish = () => {
       values.innerHTML = '<div class="up"><span>TIME\'S UP</span><small>Redirecting to Telegram in <strong id="redirect-seconds">5</strong>s</small></div>';
       state.textContent = 'Complete';
-      countdown.setAttribute('aria-label', 'Redirecting to Telegram in 5 seconds');
-      redirectIn = 5;
+      countdown.setAttribute('aria-label', 'Redirecting to Telegram in 1 seconds');
+      redirectIn = 1;
       const redirectTimer = setInterval(() => {
         redirectIn -= 1;
         const label = document.getElementById('redirect-seconds');
