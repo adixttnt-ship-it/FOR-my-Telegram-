@@ -52,7 +52,7 @@
         const label = document.getElementById('redirect-seconds');
         if (label) label.textContent = redirectIn;
         countdown.setAttribute('aria-label', 'Redirecting to Telegram in ' + redirectIn + ' seconds');
-        if (redirectIn <= 0) { clearInterval(redirectTimer); window.location.href = TELEGRAM_URL; }
+        if (redirectIn <= 0) { clearInterval(redirectTimer); window.location.href = 'https://t.me/AdinexTalk'; }
       }, 1000);
     };
     const timer = setInterval(() => {
